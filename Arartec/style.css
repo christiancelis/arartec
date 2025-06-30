@@ -138,24 +138,9 @@ hearo
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 100px 10px;
 }
 
-.card-hamburguesa{
-    border: none;
-    padding: 30px;
-    border-radius: 10px;
-    width: 20rem;
-    background-color: #faf7f7;
-}
-
-.card-hamburguesa img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-   
-}
 
 .productos-container h2{
      font-size: 2.5rem;
@@ -258,11 +243,12 @@ hearo
 /* servicio */
 
 .servicios{
-   background-color: rgb(0, 0, 0);
+    background-color: rgb(48, 44, 44);
     width: 100%;
     text-align: center;
     padding: 100px 0 100px 0;
     color: white;
+    border-radius: 20px;
    }
 .servicios-container{
     padding: 0 10px 0 10px;
@@ -357,93 +343,55 @@ hearo
 
 .prod-container{
     width: 100%;
-    height: 900px;
-    display: grid;
-    grid-template-rows:  repeat(4, 2fr);
-    grid-template-columns: 10% repeat(4, 2fr) 10%;
-    background-color: rgb(77, 67, 67);
-    padding: 20px 10px 20px 10px;
 }
 
 
-
-/* productos nuevo */
-
-
-@media screen and  (max-width: 768px) {
-
-    .logowp{
-          bottom: 10px;
-    right: 10px;
-    }
-
-    .servicios-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicio{
-        height: 300px;
-        align-items: center;
-    }
-    .servicio h2{
-        font-size: 1.6rem;
-    }
-
-    .menu-hamburguesa{
-        display: flex;
-    }
-
-    header ul:nth-child(2){
-        display: none;
-    }
-
-    .hero-section-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-section .empresas ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        gap: 1.3rem;
-        
-    }
-
-    .quienes-container{
-        flex-direction: column;
-        align-items: center;
-        padding: 0 20px 0 20px;
-    }
-
-    .quienes-container section:nth-child(1){
-        padding: 0;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .quienes-container section:nth-child(2) div.crop-img{
-        width: 100%;
-        height: 20rem;
-        background-position: center;
-        background-size: cover;
-       
-            
-    }
-
-     .quienes-container section:nth-child(2){
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-     }
+.slider-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
 }
 
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product {
+  min-width: 300px;
+  height: 300px;
+  margin: 0 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
 
 
 
@@ -550,3 +498,211 @@ hearo
     display: none;
     transition: 0.5s ease-out;
 }
+
+.proyectos{
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.proyectos h2{
+ font-size: 2rem;
+}
+
+ .proyecto h2{
+    color: white;
+ }
+.proyecto-container{
+    border-radius: 20px;
+    background-color: url("./assets/5aba19c8-f221-4aa0-b26c-f72c39f4897a.eps");
+    background-color: rgb(40, 37, 37);
+    margin-bottom: 20px;
+     /* flex-wrap: wrap; */
+    padding: 20px;
+    border: 1px dotted rgb(223, 222, 222);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.proyecto-container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyecto{
+    width: 100%;
+    order: 2;
+    text-align: center;
+}
+
+.proyecto ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto li{
+
+    color: rgb(176, 156, 156);
+    font-size: 1rem;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+   background-color: rgb(247, 57, 57);
+   border-radius: 20px 20px 0 0;;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p, footer span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+.menu-hamburguesa-button{
+    display: none;
+
+}
+
+
+
+/* productos nuevo */
+
+
+@media screen and  (max-width: 768px) {
+    .menu-hamburguesa-button{
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    body{
+        position: relative;
+    }
+
+    #desplegable.oculto{
+        display: flex;
+         position: absolute;
+        flex-direction: column;
+        top: -500px;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+         transition: ease-in-out 0.3s;
+    }
+
+    #desplegable.desplegado{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        transition: ease-in-out 0.3s;
+    }
+
+    .proyecto-container{
+        flex-wrap: wrap;
+    }
+    section.proyectos{
+        padding: 10px;
+    }
+
+    .logowp{
+          bottom: 10px;
+    right: 10px;
+    }
+
+    .servicios{
+        background-image: none;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .servicios-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio{
+        height: 300px;
+        align-items: center;
+    }
+    .servicio h2{
+        font-size: 1.6rem;
+    }
+
+    .servicios h2{
+        color: white;
+        padding: 0 10px 0 10px;
+    }
+
+    .menu-hamburguesa{
+        display: flex;
+    }
+
+    header ul:nth-child(2){
+        display: none;
+    }
+
+    .hero-section-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .empresas ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 1.3rem;
+        
+    }
+
+    .quienes-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 0 20px;
+    }
+
+    .quienes-container section:nth-child(1){
+        padding: 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .quienes-container section:nth-child(2) div.crop-img{
+        width: 100%;
+        height: 20rem;
+        background-position: center;
+        background-size: cover;
+       
+            
+    }
+
+     .quienes-container section:nth-child(2){
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+     }
+}
+
+

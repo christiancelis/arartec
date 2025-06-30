@@ -14,41 +14,49 @@
   </head>
   <body>
     <a class="logowp" href="https://w.app/xr86dy"></a>
-    
+
     <div class="hero-container">
       <header>
         <nav>
           <ul>
-            <img src="./assets/Logo-arartec.png"  alt="logo-arartec" />
+            <img
+              src="./assets/Logo-arartec.png"
+              loading="lazy"
+              alt="logo-arartec"
+            />
           </ul>
-          <ul>
+          <ul id="desplegable" class="">
             <li><a href="#quienes-somos">Quienes Somos</a></li>
             <li><a href="#servicios-redirigir">Servicios</a></li>
-            <li><a href="">Proyectos</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="https://w.app/xr86dy">Contacto</a></li>
           </ul>
           <ul>
-            <img
+            <button class="menu-hamburguesa-button">
+               <img
               src="./assets/menu-hamburguesa.png"
               id="menu-hamburguesa"
               class="menu-hamburguesa active"
               style="height: 40px"
               alt="menu hamburguesa"
             />
+
+            </button>
+           
           </ul>
         </nav>
       </header>
       <section class="hero-section">
         <div class="hero-section-container">
           <div>
-            <img src="./assets/hero2.svg" alt="" />
+            <img src="./assets/hero2.svg" loading="lazy" alt="" />
           </div>
           <div>
             <h1>Arte e Ingenieria Caceres S.A.S</h1>
             <p>
               "MultiServicios y Competencias dedicadas al bienestar Integral"
             </p>
-            <button>Conoce mas</button>
+            <a href="#servicios-redirigir"><button>Conoce mas</button></a>
           </div>
         </div>
 
@@ -57,25 +65,29 @@
             <img
               src="./assets/logo_colombia_artesanal.png"
               alt="Logo artesanias de colombia"
+              loading="lazy"
             />
             <img
               src="./assets/Cámara_de_comercio_de_Cúcuta.png"
               alt="Logo Camara de Comercio de Cúcuta"
+              loading="lazy"
             />
             <img
               src="./assets/alcaldia de cucuta.png"
               alt="Logo alcaldia de Cúcuta"
+              loading="lazy"
             />
             <img
               src="./assets/Alborada Mercado Artesanal.png"
               alt="Logo Alborada Mercado Artesanal"
+              loading="lazy"
             />
           </ul>
         </div>
       </section>
     </div>
-    <hr>
-     <a id="quienes-somos"></a>
+    <hr />
+    <a id="quienes-somos"></a>
     <div class="quienes-container">
       <section>
         <h2>¿Quienes somos?</h2>
@@ -102,113 +114,105 @@
       </section>
     </div>
 
-    <hr>
+    <hr />
 
-     <a id="servicios-redirigir"></a>
+    <a id="servicios-redirigir"></a>
     <section class="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicios-container">
-          <div class="servicio">
-           
-            <h2>Modelado en Arcilla</h2>
-             <div class="fondonegro">
-            </div>
-          </div>
-          <div class="servicio">
-            <div class="fondonegro">
-            </div>
-            <h2>Pintura, escultura, dibujo artistico</h2>
-         
-            
-          </div>
-          <div class="servicio">
-            <div class="fondonegro">
-            </div>
-            <h2>Restauraciones de Objetos, obras de arte y monumentos privados o publicos</h2>
-          
-            
-          </div>
-
+      <h2>Nuestros Servicios</h2>
+      <div class="servicios-container">
+        <div class="servicio">
+          <h2>Modelado en Arcilla</h2>
+          <div class="fondonegro"></div>
         </div>
+        <div class="servicio">
+          <div class="fondonegro"></div>
+          <h2>Pintura, escultura, dibujo artistico</h2>
+        </div>
+        <div class="servicio">
+          <div class="fondonegro"></div>
+          <h2>
+            Restauraciones de Objetos, obras de arte y monumentos privados o
+            publicos
+          </h2>
+        </div>
+      </div>
     </section>
 
-
-    <div class="productos-container">
+    <section class="productos-container">
       <h2>Nuetros Productos</h2>
-      <section class="container">
-        <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i1.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
+      <div class="slider-container">
+        <button class="btn prev">←</button>
+        <div class="slider-track">
+          <img class="product" src="./assets/i1.jpg" loading="lazy" alt="" />
+          <img class="product" src="./assets/i2.jpg" loading="lazy" alt="" />
+          <img class="product" src="./assets/i3.jpg" loading="lazy" alt="" />
+          <img class="product" src="./assets/i4.jpg" loading="lazy" alt="" />
+          <img class="product" src="./assets/i5.jpg" alt="" />
+          <img class="product" src="./assets/i6.jpg" alt="" />
         </div>
-        <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i2.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-        <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i3.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-         <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i4.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-         <!-- <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i5.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-         <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i6.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-         <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i7.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div>
-          <div class="card-hamburguesa">
-          <h3>title</h3>
-          <img src="./assets/i8.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-        </div> -->
-      </section>
-    </div>
+        <button class="btn next">→</button>
+      </div>
 
-
-    <section class="prod-container">
-      
 
     </section>
+<a id="proyectos"></a>
+    <section class="proyectos">
+      <h2>Algunos de nuestros projectos</h2>
+      <div class="proyecto-container">
+        <div class="proyecto">
+          <h2>San José de Cucuta</h2>
+          <ul>
+            <li>
+              Restauración del Divino niño de la iglesia de los redentoristas
+            </li>
+            <li>
+              Elaboración del escudo del colegio la Divina Pastora
+              tallado en Madera
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/proyectodivinoniño.jpeg" alt="" />
+      </div>
+      <div class="proyecto-container">
+        <div class="proyecto">
+          <h2>Ciudad: Durania, Norte de santander</h2>
+          <ul>
+            <li>Restauración del Busto de J. l Duran</li>
+            <li>Elaboración de Escultura de General Villamizar</li>
+            <li>
+              Restauración de leones principales de la calle de los leones
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/proyecto1jpg.jpg" alt="" />
+      </div>
+      <div class="proyecto-container">
+        <div class="proyecto">
+          <h2>Salazar de las Palmas</h2>
+          <ul>
+            <li>Restauración de monumento indio Cinera Parque Principal.</li>
+            <li>Restauración Monumento de Víctor Manuel Guerrero</li>
+            <li>Restauración del Busto de Simón Bolivar .</li>
+            <li>
+              Restaurante de Virgen de la Dolorosa cementerio
+              Salazar de las Palmas
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/proyectoindio.jpg" alt="" />
+      </div>
+    </section>
 
+    <footer>
+      <p>Arartec SAS, San José de Cúcuta, <span class="id-año"></span><span>🎯</span></p>
+    </footer>
+
+    <script>
+      const año = document.querySelector(".id-año");
+      const fecha = new Date();
+      año.textContent = fecha.getFullYear();
+    </script>
+    <!-- 
 
     <section class="f3">
     <div class="box3">
@@ -266,7 +270,7 @@
         <br>
      
     </div>
-</section>
+</section> -->
 
     <script src="./source.js" async></script>
   </body>
